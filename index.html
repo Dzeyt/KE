@@ -15,7 +15,7 @@
     <header>
         <div class="header-container">
             <div class="header__logo">
-                <a href="/"><img class="logo-img" src="./img/logo.png" alt="логотип"></a>
+                <a href="#"><img class="logo-img" src="./img/logo.png" alt="логотип"></a>
             </div>
             <nav class="header__nav">
                 <ul class="nav-menu">
@@ -69,12 +69,15 @@
             </div>
             <div class="mobile-menu">
                 <button class="mobile-menu__trigger">
-                    <img src="./img/burger-icon.svg" alt="бургер меню" class="burger-icon">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
                 </button>
                 <div class="mobile-menu__search">
                     <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input">
                     <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
                 </div>
+                <div class="mobile-menu-overlay"></div>
                 <nav role="navigation" class="mobile-menu__nav">
                     <a href="#" aria-label="Каталог">КАТАЛОГ</a>
                     <a href="#" aria-label="Акции">АКЦИИ</a>
@@ -329,5 +332,68 @@
         </footer>
     </main>
 </body>
+
+<script>
+    document.querySelector('.mobile-menu__trigger').addEventListener('click', function() {
+        const menuElement = document.querySelector('.mobile-menu');
+        const overlay = document.querySelector('.mobile-menu-overlay');
+        const body = document.body;
+        let scrollPosition;
+
+        if (menuElement.classList.contains('open')) {
+            // Закрываем меню и разблокируем скролл
+            menuElement.classList.remove('open');
+            overlay.classList.remove('active');
+            
+            // Восстанавливаем скролл
+            body.style.position = '';
+            body.style.top = '';
+            body.style.width = '';
+            body.style.overflow = '';
+            window.scrollTo(0, parseInt(body.dataset.scrollPosition || '0'));
+            
+            // Для iOS
+            document.removeEventListener('touchmove', preventTouch);
+        } else {
+            // Открываем меню и блокируем скролл
+            menuElement.classList.add('open');
+            overlay.classList.add('active');
+            
+            // Сохраняем и фиксируем позицию скролла
+            scrollPosition = window.scrollY;
+            body.style.position = 'fixed';
+            body.style.top = `-${scrollPosition}px`;
+            body.style.width = '100%';
+            body.style.overflow = 'hidden';
+            body.dataset.scrollPosition = scrollPosition; // Сохраняем позицию в data-атрибут
+            
+            // Для iOS
+            document.addEventListener('touchmove', preventTouch, { passive: false });
+        }
+    });
+
+    // Функция для блокировки скролла на iOS
+    function preventTouch(e) {
+        e.preventDefault();
+    }
+
+    // Закрытие меню при клике на оверлей
+    document.querySelector('.mobile-menu-overlay').addEventListener('click', function() {
+        const menuElement = document.querySelector('.mobile-menu');
+        const body = document.body;
+        
+        menuElement.classList.remove('open');
+        this.classList.remove('active');
+        
+        // Полное восстановление скролла
+        body.style.position = '';
+        body.style.top = '';
+        body.style.width = '';
+        body.style.overflow = '';
+        window.scrollTo(0, parseInt(body.dataset.scrollPosition || '0'));
+        
+        document.removeEventListener('touchmove', preventTouch);
+    });
+</script>
 
 </html>
