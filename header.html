@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header__logo">
+                <a href="/"><img class="logo-img" src="./img/logo.png" alt="логотип"></a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Каталог">КАТАЛОГ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Акции">АКЦИИ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="О компании">О КОМПАНИИ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Контакты">КОНТАКТЫ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Контакты">ПОМОЩЬ</a></li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input">
+                <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
+            </div>
+            <div class="user-actions">
+                <button class="action-btn" aria-label="Вход/Регистрация">
+                    <img src="./img/user-icon.svg" alt="Вход/Регистрация">
+                </button>
+            </div>
+            <div class="header__tools">
+                <div class="header__tools-container header-cart">
+                    <a href="#" class="header-tools__links header-cart__link">
+                        <div class="header-tools__count">
+                            <span>
+                                <div class="items">
+                                    <div>0</div>
+                                </div>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__tools-container header-wishlist">
+                    <a href="#" class="header-tools__links header-wishlist__link">
+                        <div class="header-tools__count">
+                            <span>
+                                <div class="items">
+                                    <div>0</div>
+                                </div>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <button class="mobile-menu__trigger">
+                    <img src="./img/burger-icon.svg" alt="бургер меню" class="burger-icon">
+                </button>
+                <div class="mobile-menu__search">
+                    <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input">
+                    <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
+                </div>
+                <nav role="navigation" class="mobile-menu__nav">
+                    <a href="#" aria-label="Каталог">КАТАЛОГ</a>
+                    <a href="#" aria-label="Акции">АКЦИИ</a>
+                    <a href="#" aria-label="О компании">О КОМПАНИИ</a>
+                    <a href="#" aria-label="Контакты">КОНТАКТЫ</a>
+                    <a href="#" aria-label="Услуги">ПОМОЩЬ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

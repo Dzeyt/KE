@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header__logo">
+                <a href="/"><img class="logo-img" src="./img/logo.png" alt="логотип"></a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Каталог">КАТАЛОГ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Акции">АКЦИИ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="О компании">О КОМПАНИИ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Контакты">КОНТАКТЫ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Контакты">ПОМОЩЬ</a></li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input">
+                <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
+            </div>
+            <div class="user-actions">
+                <button class="action-btn" aria-label="Вход/Регистрация">
+                    <img src="./img/user-icon.svg" alt="Вход/Регистрация">
+                </button>
+            </div>
+            <div class="header__tools">
+                <div class="header__tools-container header-cart">
+                    <a href="#" class="header-tools__links header-cart__link">
+                        <div class="header-tools__count">
+                            <span>
+                                <div class="items">
+                                    <div>0</div>
+                                </div>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__tools-container header-wishlist">
+                    <a href="#" class="header-tools__links header-wishlist__link">
+                        <div class="header-tools__count">
+                            <span>
+                                <div class="items">
+                                    <div>0</div>
+                                </div>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <button class="mobile-menu__trigger">
+                    <img src="./img/burger-icon.svg" alt="бургер меню" class="burger-icon">
+                </button>
+                <div class="mobile-menu__search">
+                    <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input">
+                    <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
+                </div>
+                <nav role="navigation" class="mobile-menu__nav">
+                    <a href="#" aria-label="Каталог">КАТАЛОГ</a>
+                    <a href="#" aria-label="Акции">АКЦИИ</a>
+                    <a href="#" aria-label="О компании">О КОМПАНИИ</a>
+                    <a href="#" aria-label="Контакты">КОНТАКТЫ</a>
+                    <a href="#" aria-label="Услуги">ПОМОЩЬ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+            </div>
+        </section>
+        <section class="home-catalog">
+            <div class="wrapper-inner">
+                <h2 class="home-catalog__title">Каталог товаров</h2>
+            </div>
+            <div class="catalog">
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/1.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Настольные корзины</div>
+                    <div class="catalog__count">36 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/2.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Интерьерные корзины</div>
+                    <div class="catalog__count">11 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/3.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Мебель</div>
+                    <div class="catalog__count">6 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/4.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Для гардероба</div>
+                    <div class="catalog__count">5 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/5.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Коллекция Manhattan</div>
+                    <div class="catalog__count">8 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/6.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Корпоративные подарки</div>
+                    <div class="catalog__count">14 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/7.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Настольные игры</div>
+                    <div class="catalog__count">2 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/8.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Повседневные аксессуары</div>
+                    <div class="catalog__count">2 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/9.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Серия Light</div>
+                    <div class="catalog__count">20 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/10.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Серия Premium</div>
+                    <div class="catalog__count">49 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/11.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Серия люкс</div>
+                    <div class="catalog__count">2 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/12.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Для сервировки</div>
+                    <div class="catalog__count">20 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/13.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">Для рабочего стола</div>
+                    <div class="catalog__count">24 товаров</div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__img">
+                        <img src="./img/catalog-img/14.jpg" alt="Название категории">
+                    </div>
+                    <div class="catalog__name">SALE</div>
+                    <div class="catalog__count">9 товаров</div>
+                </div>
+            </div>
+        </section>
+        <section class="product-recommendations">
+            <div class="product-recommendations__container">
+                <nav>
+                    <ul class="product-recommendations-nav">
+                        <li class="product-recommendations__item active">Хит</li>
+                        <li class="product-recommendations__item">Советуем</li>
+                        <li class="product-recommendations__item">Новинки</li>
+                        <li class="product-recommendations__item">Акция</li>
+                    </ul>
+                </nav>
+                <div class="product-recommendations__grid">
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit1.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Органайзер LET</a></h3>
+                        <div class="product-card__price">
+                            <span>6 700 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit2.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Поднос GET</a></h3>
+                        <div class="product-card__price">
+                            <span>16 050 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit3.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Поднос с ручками FABA</a>
+                        </h3>
+                        <div class="product-card__price">
+                            <span>15 800 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit4.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Корзина BUBBLES XL
+                                low</a></h3>
+                        <div class="product-card__price">
+                            <span>37 000 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit5.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Корзина LILY</a></h3>
+                        <div class="product-card__price">
+                            <span>7 050 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit1.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Органайзер LET</a></h3>
+                        <div class="product-card__price">
+                            <span>6 700 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit2.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Поднос GET</a></h3>
+                        <div class="product-card__price">
+                            <span>16 050 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit3.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Поднос с ручками FABA</a>
+                        </h3>
+                        <div class="product-card__price">
+                            <span>15 800 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="home-about">
+            <div class="home-about__container">
+                <div class="home-about__img-container">
+                    <img src="./img/home-about.jpg" alt="корзина" class="home-about__img">
+                </div>
+
+                <div class="home-about__content">
+                    <h2 class="home-about__title">О компании</h2>
+                    <div class="home-about__text">
+                        <p>
+                            Element - российский бренд, выделяющийся элегантным дизайном, который выражает роскошь в
+                            широкой цветовой палитре из натуральной кожи. Все изделия изготовлены вручную в соответствии
+                            с высочайшими стандартами с использованием как традиционных, так и передовых технологий. Мы
+                            ценим наших клиентов и поддерживаем безупречную репутацию бренда, поэтому разрабатываем свою
+                            продукцию самостоятельно и размещаем заказы, тщательно контролируя все производственные
+                            процессы.
+                        </p>
+                        <p>
+                            Element - это аксессуары для дома, квартиры, дачи, коммерческих помещений, отвечающие вашим
+                            желаниям и вносящие особую эстетику в интерьер.
+                        </p>
+                    </div>
+                    <a href="#" class="home-about__link"><img src="./img/link.svg" alt="стрелочка"
+                            class="home-about__link-img">Подробнее</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__copyright">
+                    <time datetime="2025" class="footer__year">© 2025 Karina El</time>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+79995552266" class="footer__phone">
+                        <img src="./img/phone-icon.svg" alt="phone" class="footer__phone-icon">
+                        +7 999 555-22-66
+                    </a>
+                    <div class="footer__social">
+                        <a href="https://wa.me/79995552266" target="_blank" rel="noopener">
+                            <img src="./img/whatsapp-icon.svg" alt="whatsapp" class="footer__social-icon">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener">
+                            <img src="./img/instagram.svg" alt="Instagram" class="footer__social-icon">
+                        </a>
+                        <a href="https://telegram.com" target="_blank" rel="noopener">
+                            <img src="./img/tg-icon.svg" alt="Telegram" class="footer__social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
