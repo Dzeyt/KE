@@ -104,6 +104,11 @@ header {
 .user-actions {
     margin-right: 20px;
     height: 24px;
+    transition: opacity 0.3s;
+}
+
+.user-actions:hover {
+    opacity: 0.6;
 }
 
 .action-btn {

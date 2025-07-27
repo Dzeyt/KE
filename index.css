@@ -42,16 +42,27 @@
     gap: 40px;
 }
 
-.active {
-    border-bottom: 2px solid #6a6a6a;
-}
-
 .product-recommendations__item {
     font-size: 16px;
     line-height: 20px;
     text-transform: none;
     padding: 0px 0px 5px 0px;
     font-weight: 400;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.product-recommendations__item:hover {
+    opacity: 0.6;
+}
+
+.active {
+    border-bottom: 2px solid #6a6a6a;
+    cursor: default;
+}
+
+.active:hover {
+    opacity: 1;
 }
 
 .product-recommendations__grid {
@@ -60,17 +71,22 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    justify-content: space-between;
     align-items: center;
     gap: 20px;
+    min-height: 350px;
+}
+
+.hidden {
+    display: none;
 }
 
 .product-card {
+    position: relative;
     flex: 0 0 auto;
     scroll-snap-align: start;
     background-color: #fff;
     padding: 20px 20px 12px;
-    min-height: 295px;
+    min-height: 310px;
     transition: transform 0.3s;
 
     &:hover {
@@ -85,6 +101,8 @@
 }
 
 .product-card__title {
+    max-width: 170px;
+    min-height: 40px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -93,11 +111,35 @@
 }
 
 .product-card__price {
+    max-width: 170px;
     font-size: 18px;
     font-weight: 600;
     line-height: 15px;
     color: #818181;
     margin: 8px 0 28px;
+}
+
+.product-card__price span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+    padding-left: 10px;
+}
+
+.sale {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    padding: 5px 10px;
+    background-color: #ff9f2b;
+}
+
+.sale p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3b3a38;
 }
 
 .product-card__button {
@@ -172,6 +214,11 @@
     margin: 10px 0px 0px;
     display: flex;
     color: #4f4d4d;
+    transition: opacity 0.3s;
+}
+
+.home-about__link:hover {
+    opacity: 0.6;
 }
 
 .home-about__link-img {
@@ -203,6 +250,11 @@
 
 .footer__social-icon {
     width: 35px;
+    transition: opacity 0.3s;
+}
+
+.footer__social-icon:hover {
+    opacity: 0.9;
 }
 
 .footer__phone {
