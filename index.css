@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./catalog.css);
+@import url(./auth.css);
 
 .hero {
     width: 100%;
@@ -147,7 +148,7 @@
     text-align: center;
     padding: 9px 13px 8px;
     color: #F8F7F6;
-    background: #A7A29B;
+    background: #89837C;
     border-radius: 2px;
     cursor: pointer;
     font-size: 16px;
