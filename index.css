@@ -2,6 +2,10 @@
 @import url(./catalog.css);
 @import url(./auth.css);
 
+button, a, input, textarea, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .hero {
     width: 100%;
     max-width: 1960px;
