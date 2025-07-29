@@ -419,14 +419,12 @@
         </div>
     </footer>
 
-    <!-- Оверлей попапа -->
     <div class="auth-overlay" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
         <div class="auth-modal">
             <button class="close-btn">
                 <span></span>
                 <span></span>
             </button>
-            <!-- Иконка и заголовок -->
             <div class="auth-icon-container">
                 <img src="./img/auth-icon.svg" alt="иконка">
             </div>
@@ -434,16 +432,13 @@
             <div class="auth-content-container">
                 <h2 id="auth-modal-title" class="auth-title">Вход</h2>
 
-                <!-- Форма входа -->
                 <form class="auth-form" method="POST" action="/login">
-                    <!-- Поле email -->
                     <div class="form-group">
                         <label for="email" class="form-label">E-mail</label>
                         <input type="email" id="email" name="email" class="form-input" required autocomplete="email"
                             placeholder="your@email.com" aria-required="true">
                     </div>
 
-                    <!-- Поле пароля -->
                     <div class="form-group">
                         <label for="password" class="form-label">Пароль</label>
                         <input type="password" id="password" name="password" class="form-input" required
@@ -453,11 +448,9 @@
                         </div>
                     </div>
 
-                    <!-- Кнопкавхода -->
                     <button type="submit" class="auth-button">Войти</button>
                 </form>
 
-                <!-- Ссылка на регистрацию -->
                 <div class="auth-register-prompt">
                     <span>Нет аккаунта?</span>
                     <a href="/register" class="auth-register-link">Зарегистрироваться</a>
