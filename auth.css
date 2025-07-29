@@ -159,6 +159,16 @@
     }
 }
 
+@media (max-width: 460px) {
+    .auth-icon-container img {
+        margin: 30px auto 50px;
+    }
+
+    .auth-button {
+        margin: 35px auto;
+    }
+}
+
 @media (max-width: 400px) {
     .auth-modal {
         width: 90%;
