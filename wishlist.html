@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корзина</title>
+    <title>Избранное</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
@@ -35,11 +35,12 @@
                 </ul>
             </nav>
             <div class="header__search">
-                <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input cart-input">
+                <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту"
+                    class="search-input cart-input">
                 <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
             </div>
             <div class="user-actions  cart-actions">
-                <a href="./wishlist.html" class="header-tools__links header-wishlist__link cart-link">
+                <a href="./cart.html" class="header-tools__links header-cart__link cart-link">
                     <div class="header-tools__count">
                         <span>
                             <div class="items">
@@ -75,90 +76,59 @@
         </div>
     </header>
     <main>
-        <h1 class="cart__title">Корзина</h1>
-        <div class="cart__container">
-            <div>
-                <div>
-                    <div class="cart__items-container">
-                        <div class="cart__item">
-                            <div class="cart__item-img">
-                                <img src="./img/product-card/product-card-hit1.jpg" alt="">
-                            </div>
-                            <div class="cart__item-info">
-                                <h3 class="cart__item-name">Органайзер LET </h3>
-                                <p class="cart__item-size"> Размер S</p>
-                                <p class="cart__item-color">Цвет Айвори</p>
-                            </div>
-                            <div class="cart__item-controls">
-                                <div class="cart__item-actions">
-                                    <button class="cart__item-btn">
-                                        <img src="./img/wishlist-active.svg" alt="">
-                                    </button>
-                                    <button class="cart__item-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none"
-                                            viewBox="0 0 25 24">
-                                            <path fill="currentColor" fill-rule="evenodd"
-                                                d="M18.113 5.99a.75.75 0 0 1 0 1.06L13.163 12l4.95 4.95a.75.75 0 1 1-1.06 1.06l-4.95-4.95-4.95 4.95a.75.75 0 0 1-1.06-1.06L11.041 12l-4.95-4.95a.75.75 0 1 1 1.06-1.06l4.95 4.95 4.95-4.95a.75.75 0 0 1 1.06 0"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="cart__item-price">
-                                    <p>6 700 ₽</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cart__item">
-                            <div class="cart__item-img">
-                                <img src="./img/product-card/product-card-sale2.jpg" alt="">
-                            </div>
-                            <div class="cart__item-info">
-                                <h3 class="cart__item-name">Корзина QUADRO</h3>
-                                <p class="cart__item-size">Размер L</p>
-                                <p class="cart__item-color">Цвет Фуксия</p>
-                            </div>
-                            <div class="cart__item-controls">
-                                <div class="cart__item-actions">
-                                    <button class="cart__item-btn">
-                                        <img src="./img/wishlist-icon.svg" alt="">
-                                    </button>
-                                    <button class="cart__item-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none"
-                                            viewBox="0 0 25 24">
-                                            <path fill="currentColor" fill-rule="evenodd"
-                                                d="M18.113 5.99a.75.75 0 0 1 0 1.06L13.163 12l4.95 4.95a.75.75 0 1 1-1.06 1.06l-4.95-4.95-4.95 4.95a.75.75 0 0 1-1.06-1.06L11.041 12l-4.95-4.95a.75.75 0 1 1 1.06-1.06l4.95 4.95 4.95-4.95a.75.75 0 0 1 1.06 0"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="cart__item-price">
-                                    <p style="text-decoration: line-through;">5 700 ₽</p>
-                                    <p>2 850 ₽</p>
-                                    <p style="font-size: 13px; color: #D97700;">-50%</p>
-                                </div>
-                            </div>
+        <h1 class="cart__title">Избранное</h1>
+        <div class="wishlist__container">
+            <div class="wishlist__wrapper">
+                <div class="wishlist__item">
+                    <div class="wishlist__item-img">
+                        <img src="./img/product-card/product-card-hit1.jpg" alt="">
+                    </div>
+                    <div class="wishlist__item-info">
+                        <h3 class="wishlist__item-name">Органайзер LET </h3>
+                        <p class="cart__item-size"> Размер S</p>
+                        <p class="cart__item-color">Цвет Айвори</p>
+                        <div class="wishlist__item-price">
+                            <p>6 700 ₽</p>
                         </div>
                     </div>
+                    <div class="wishlist__btn">
+                        <button>В корзину</button>
+                    </div>
+                    <button class="wishlist__item-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none" viewBox="0 0 25 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M18.113 5.99a.75.75 0 0 1 0 1.06L13.163 12l4.95 4.95a.75.75 0 1 1-1.06 1.06l-4.95-4.95-4.95 4.95a.75.75 0 0 1-1.06-1.06L11.041 12l-4.95-4.95a.75.75 0 1 1 1.06-1.06l4.95 4.95 4.95-4.95a.75.75 0 0 1 1.06 0"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-            <div class="cart-summary">
-                <div class="summary-row total">
-                    <span class="summary-label">Итого</span>
-                    <span class="summary-value">9 550 ₽</span>
+                <div class="wishlist__item">
+                    <div class="wishlist__item-img">
+                        <img src="./img/product-card/product-card-sale1.jpg" alt="">
+                    </div>
+                    <div class="wishlist__item-info">
+                        <h3 class="wishlist__item-name">Корзина BUBBLES mini</h3>
+                        <p class="cart__item-size"> Размер S</p>
+                        <p class="cart__item-color">Цвет Чёрный</p>
+                        <div class="wishlist__item-price">
+                            <div class="wishlist__item-sale">
+                                <p style="text-decoration: line-through;">28 450₽</p>
+                                <p>22 760 ₽</p>
+                            </div>
+                            <p style="font-size: 13px; color: #D97700;">-20%</p>
+                        </div>
+                    </div>
+                    <div class="wishlist__btn">
+                        <button>В корзину</button>
+                    </div>
+                    <button class="wishlist__item-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none" viewBox="0 0 25 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M18.113 5.99a.75.75 0 0 1 0 1.06L13.163 12l4.95 4.95a.75.75 0 1 1-1.06 1.06l-4.95-4.95-4.95 4.95a.75.75 0 0 1-1.06-1.06L11.041 12l-4.95-4.95a.75.75 0 1 1 1.06-1.06l4.95 4.95 4.95-4.95a.75.75 0 0 1 1.06 0"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
                 </div>
-
-                <div class="summary-row subtotal">
-                    <span class="summary-label">2 товара</span>
-                    <span class="summary-value">12 400 ₽</span>
-                </div>
-
-                <div class="summary-row discount">
-                    <span class="summary-label">Скидка</span>
-                    <span class="summary-value">—2 850 ₽</span>
-                </div>
-
-                <button class="checkout-button">Оформить заказ
-                </button>
             </div>
         </div>
     </main>
