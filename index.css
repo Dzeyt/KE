@@ -1,6 +1,7 @@
 @import url(./header.css);
 @import url(./catalog.css);
 @import url(./auth.css);
+@import url(./cart.css);
 
 button, a, input, textarea, [role="button"] {
   -webkit-tap-highlight-color: transparent;

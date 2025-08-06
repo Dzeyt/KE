@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header__logo">
+                <a href="./index.html"><img class="logo-img" src="./img/logo.png" alt="логотип"></a>
+            </div>
+            <nav class="header__nav cart-nav">
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Каталог">КАТАЛОГ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Акции">АКЦИИ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="О компании">О КОМПАНИИ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Контакты">КОНТАКТЫ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#" class="menu-item" aria-label="Контакты">ПОМОЩЬ</a></li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input cart-input">
+                <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
+            </div>
+            <div class="user-actions  cart-actions">
+                <a href="#" class="header-tools__links header-wishlist__link cart-link">
+                    <div class="header-tools__count">
+                        <span>
+                            <div class="items">
+                                <div>1</div>
+                            </div>
+                        </span>
+                    </div>
+                </a>
+                <button class="action-btn" aria-label="Вход/Регистрация">
+                    <img src="./img/user-icon.svg" alt="Вход/Регистрация">
+                </button>
+            </div>
+
+            <div class="mobile-menu">
+                <button class="mobile-menu__trigger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                <div class="mobile-menu__search">
+                    <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input">
+                    <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
+                </div>
+                <div class="mobile-menu-overlay"></div>
+                <nav role="navigation" class="mobile-menu__nav">
+                    <a href="#" aria-label="Каталог">КАТАЛОГ</a>
+                    <a href="#" aria-label="Акции">АКЦИИ</a>
+                    <a href="#" aria-label="О компании">О КОМПАНИИ</a>
+                    <a href="#" aria-label="Контакты">КОНТАКТЫ</a>
+                    <a href="#" aria-label="Услуги">ПОМОЩЬ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="cart__title">Корзина</h1>
+        <div class="cart__container">
+            <div>
+                <div>
+                    <div class="cart__items-container">
+                        <div class="cart__item">
+                            <div class="cart__item-img">
+                                <img src="./img/product-card/product-card-hit1.jpg" alt="">
+                            </div>
+                            <div class="cart__item-info">
+                                <h3 class="cart__item-name">Органайзер LET </h3>
+                                <p class="cart__item-size"> Размер S</p>
+                                <p class="cart__item-color">Цвет Айвори</p>
+                            </div>
+                            <div class="cart__item-controls">
+                                <div class="cart__item-actions">
+                                    <button class="cart__item-btn">
+                                        <img src="./img/wishlist-active.svg" alt="">
+                                    </button>
+                                    <button class="cart__item-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none"
+                                            viewBox="0 0 25 24">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                                d="M18.113 5.99a.75.75 0 0 1 0 1.06L13.163 12l4.95 4.95a.75.75 0 1 1-1.06 1.06l-4.95-4.95-4.95 4.95a.75.75 0 0 1-1.06-1.06L11.041 12l-4.95-4.95a.75.75 0 1 1 1.06-1.06l4.95 4.95 4.95-4.95a.75.75 0 0 1 1.06 0"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cart__item-price">
+                                    <p>6 700 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__item">
+                            <div class="cart__item-img">
+                                <img src="./img/product-card/product-card-sale2.jpg" alt="">
+                            </div>
+                            <div class="cart__item-info">
+                                <h3 class="cart__item-name">Корзина QUADRO</h3>
+                                <p class="cart__item-size">Размер L</p>
+                                <p class="cart__item-color">Цвет Фуксия</p>
+                            </div>
+                            <div class="cart__item-controls">
+                                <div class="cart__item-actions">
+                                    <button class="cart__item-btn">
+                                        <img src="./img/wishlist-icon.svg" alt="">
+                                    </button>
+                                    <button class="cart__item-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none"
+                                            viewBox="0 0 25 24">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                                d="M18.113 5.99a.75.75 0 0 1 0 1.06L13.163 12l4.95 4.95a.75.75 0 1 1-1.06 1.06l-4.95-4.95-4.95 4.95a.75.75 0 0 1-1.06-1.06L11.041 12l-4.95-4.95a.75.75 0 1 1 1.06-1.06l4.95 4.95 4.95-4.95a.75.75 0 0 1 1.06 0"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cart__item-price">
+                                    <p style="text-decoration: line-through;">5 700 ₽</p>
+                                    <p>2 850 ₽</p>
+                                    <p style="font-size: 13px; color: #D97700;">-50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row total">
+                    <span class="summary-label">Итого</span>
+                    <span class="summary-value">9 550 ₽</span>
+                </div>
+
+                <div class="summary-row subtotal">
+                    <span class="summary-label">2 товара</span>
+                    <span class="summary-value">12 400 ₽</span>
+                </div>
+
+                <div class="summary-row discount">
+                    <span class="summary-label">Скидка</span>
+                    <span class="summary-value">—2 850 ₽</span>
+                </div>
+
+                <button class="checkout-button">Оформить заказ
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                <time datetime="2025" class="footer__year">© 2025 Karina El</time>
+            </div>
+            <div class="footer__contacts">
+                <a href="tel:+79995552266" class="footer__phone">
+                    <img src="./img/phone-icon.svg" alt="phone" class="footer__phone-icon">
+                    +7 999 555-22-66
+                </a>
+                <div class="footer__social">
+                    <a href="https://wa.me/79995552266" target="_blank" rel="noopener">
+                        <img src="./img/whatsapp-icon.svg" alt="whatsapp" class="footer__social-icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener">
+                        <img src="./img/instagram.svg" alt="Instagram" class="footer__social-icon">
+                    </a>
+                    <a href="https://telegram.com" target="_blank" rel="noopener">
+                        <img src="./img/tg-icon.svg" alt="Telegram" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="auth-overlay" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+        <div class="auth-modal">
+            <button class="close-btn">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="auth-icon-container">
+                <img src="./img/auth-icon.svg" alt="иконка">
+            </div>
+
+            <div class="auth-content-container">
+                <h2 id="auth-modal-title" class="auth-title">Вход</h2>
+
+                <form class="auth-form" method="POST" action="/login">
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-input" required autocomplete="email"
+                            placeholder="your@email.com" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Пароль</label>
+                        <input type="password" id="password" name="password" class="form-input" required
+                            autocomplete="current-password" placeholder="**********" aria-required="true">
+                        <div class="forgot-password">
+                            <a href="/forgot-password" class="forgot-password-link">Забыли Пароль?</a>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-button">Войти</button>
+                </form>
+
+                <div class="auth-register-prompt">
+                    <span>Нет аккаунта?</span>
+                    <a href="/register" class="auth-register-link">Зарегистрироваться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.querySelector('.mobile-menu__trigger').addEventListener('click', function () {
+        const menuElement = document.querySelector('.mobile-menu');
+        const overlay = document.querySelector('.mobile-menu-overlay');
+        const body = document.body;
+        let scrollPosition;
+
+        if (menuElement.classList.contains('open')) {
+            // Закрываем меню и разблокируем скролл
+            menuElement.classList.remove('open');
+            overlay.classList.remove('active');
+
+            // Восстанавливаем скролл
+            body.style.position = '';
+            body.style.top = '';
+            body.style.width = '';
+            body.style.overflow = '';
+            window.scrollTo(0, parseInt(body.dataset.scrollPosition || '0'));
+
+            // Для iOS
+            document.removeEventListener('touchmove', preventTouch);
+        } else {
+            // Открываем меню и блокируем скролл
+            menuElement.classList.add('open');
+            overlay.classList.add('active');
+
+            // Сохраняем и фиксируем позицию скролла
+            scrollPosition = window.scrollY;
+            body.style.position = 'fixed';
+            body.style.top = `-${scrollPosition}px`;
+            body.style.width = '100%';
+            body.style.overflow = 'hidden';
+            body.dataset.scrollPosition = scrollPosition; // Сохраняем позицию в data-атрибут
+
+            // Для iOS
+            document.addEventListener('touchmove', preventTouch, { passive: false });
+        }
+    });
+
+    // Функция для блокировки скролла на iOS
+    function preventTouch(e) {
+        e.preventDefault();
+    }
+
+    // Закрытие меню при клике на оверлей
+    document.querySelector('.mobile-menu-overlay').addEventListener('click', function () {
+        const menuElement = document.querySelector('.mobile-menu');
+        const body = document.body;
+
+        menuElement.classList.remove('open');
+        this.classList.remove('active');
+
+        // Полное восстановление скролла
+        body.style.position = '';
+        body.style.top = '';
+        body.style.width = '';
+        body.style.overflow = '';
+        window.scrollTo(0, parseInt(body.dataset.scrollPosition || '0'));
+
+        document.removeEventListener('touchmove', preventTouch);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const categoryItems = document.querySelectorAll('.product-recommendations__item');
+
+        categoryItems.forEach(item => {
+            item.addEventListener('click', function () {
+                // Удаляем активный класс у всех элементов
+                categoryItems.forEach(i => i.classList.remove('active'));
+
+                // Добавляем активный класс текущему элементу
+                this.classList.add('active');
+
+                // Скрываем все категории
+                document.querySelectorAll('.product-recommendations__grid').forEach(grid => {
+                    grid.classList.add('hidden');
+                });
+
+                // Показываем выбранную категорию
+                const category = this.getAttribute('data-category');
+                const selectedCategory = document.getElementById(category);
+
+                if (selectedCategory) {
+                    selectedCategory.classList.remove('hidden');
+                } else {
+                    console.error('Элемент с ID "${category}" не найден');
+                }
+            });
+        });
+    });
+
+    document.querySelector('.action-btn').addEventListener('click', function () {
+        const overlay = document.querySelector('.auth-overlay');
+
+        overlay.classList.add('opened');
+
+        document.body.style.overflow = 'hidden';
+    })
+
+    document.querySelector('.close-btn').addEventListener('click', closeAuthForm);
+
+    document.querySelector('.auth-overlay').addEventListener('click', function (e) {
+        if (e.target === this) {
+            closeAuthForm();
+        }
+    });
+
+    function closeAuthForm() {
+        const overlay = document.querySelector('.auth-overlay');
+
+        overlay.classList.remove('opened')
+
+        document.body.style.overflow = '';
+    }
+</script>
+
+</html>
