@@ -162,7 +162,7 @@
     border-radius: 10px;
     border: none;
     color: #F8F7F6;
-    background: #89837C;
+    background: #A7A29B;
 }
 
 .wishlist__container {
@@ -261,7 +261,7 @@
     border-radius: 6px;
     border: none;
     color: #F8F7F6;
-    background: #89837C;
+    background: #A7A29B;
 }
 
 @media (max-width: 930px) {

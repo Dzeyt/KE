@@ -16,7 +16,7 @@
 
 .auth-modal {
     position: relative;
-    background-color: #89837C;
+    background-color: #A7A29B;
     border-radius: 15px;
     color: #444;
     border: 5px solid #f8f7f6;
@@ -89,7 +89,7 @@
     padding: 10px;
     border-radius: 10px;
     border: none;
-    background-color: #89837c;
+    background-color: #a7a29b;
     font-weight: 600;
     font-size: 20px;
     margin: 40px auto;
