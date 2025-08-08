@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karina El</title>
+    <title>Каталог</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
@@ -19,7 +19,7 @@
             </div>
             <nav class="header__nav">
                 <ul class="nav-menu">
-                    <li><a href="./catalog.html" class="menu-item" aria-label="Каталог">КАТАЛОГ</a></li>
+                    <li><a href="./catalog.html" class="menu-item active" aria-label="Каталог">КАТАЛОГ</a></li>
                 </ul>
                 <ul class="nav-menu">
                     <li><a href="./promo.html" class="menu-item" aria-label="Акции">АКЦИИ</a></li>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="mobile-menu-overlay"></div>
                 <nav role="navigation" class="mobile-menu__nav">
-                    <a href="./catalog.html" aria-label="Каталог">КАТАЛОГ</a>
+                    <a href="./catalog.html" aria-label="Каталог" class="act">КАТАЛОГ</a>
                     <a href="./promo.html" aria-label="Акции">АКЦИИ</a>
                     <a href="./about.html" aria-label="О компании">О КОМПАНИИ</a>
                     <a href="./contacts.html" aria-label="Контакты">КОНТАКТЫ</a>
@@ -89,128 +89,129 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero-container">
+        <div class="wrapper-inner">
+            <div class="nav-intro">
+                <ul class="nav-intro__item">
+                    <li><a href="./index.html">Главная</a></li>
+                    <span>/</span>
+                    <li><a href="./catalog.html"></a>Каталог</li>
+                </ul>
             </div>
-        </section>
-        <section class="home-catalog">
-            <div class="wrapper-inner">
-                <h2 class="home-catalog__title">Каталог товаров</h2>
-            </div>
-            <div class="catalog">
-                <a href="/nastolnye-korziny" class="catalog__item" title="Настольные корзины">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/1.jpg" alt="Настольные корзины" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Настольные корзины</div>
-                    <div class="catalog__count">36 товаров</div>
-                </a>
+            <h2 class="catalog__title">Каталог</h2>
+        </div>
+        <div class="catalog">
+            <a href="/nastolnye-korziny" class="catalog__item" title="Настольные корзины">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/1.jpg" alt="Настольные корзины" loading="lazy">
+                </div>
+                <div class="catalog__name">Настольные корзины</div>
+                <div class="catalog__count">36 товаров</div>
+            </a>
 
-                <a href="/interernye-korziny" class="catalog__item" title="Интерьерные корзины">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/2.jpg" alt="Интерьерные корзины" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Интерьерные корзины</div>
-                    <div class="catalog__count">11 товаров</div>
-                </a>
+            <a href="/interernye-korziny" class="catalog__item" title="Интерьерные корзины">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/2.jpg" alt="Интерьерные корзины" loading="lazy">
+                </div>
+                <div class="catalog__name">Интерьерные корзины</div>
+                <div class="catalog__count">11 товаров</div>
+            </a>
 
-                <a href="/mebel" class="catalog__item" title="Мебель">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/3.jpg" alt="Мебель" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Мебель</div>
-                    <div class="catalog__count">6 товаров</div>
-                </a>
+            <a href="/mebel" class="catalog__item" title="Мебель">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/3.jpg" alt="Мебель" loading="lazy">
+                </div>
+                <div class="catalog__name">Мебель</div>
+                <div class="catalog__count">6 товаров</div>
+            </a>
 
-                <a href="/dlya-garderoba" class="catalog__item" title="Для гардероба">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/4.jpg" alt="Для гардероба" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Для гардероба</div>
-                    <div class="catalog__count">5 товаров</div>
-                </a>
+            <a href="/dlya-garderoba" class="catalog__item" title="Для гардероба">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/4.jpg" alt="Для гардероба" loading="lazy">
+                </div>
+                <div class="catalog__name">Для гардероба</div>
+                <div class="catalog__count">5 товаров</div>
+            </a>
 
-                <a href="/manhattan" class="catalog__item" title="Коллекция Manhattan">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/5.jpg" alt="Коллекция Manhattan" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Коллекция Manhattan</div>
-                    <div class="catalog__count">8 товаров</div>
-                </a>
+            <a href="/manhattan" class="catalog__item" title="Коллекция Manhattan">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/5.jpg" alt="Коллекция Manhattan" loading="lazy">
+                </div>
+                <div class="catalog__name">Коллекция Manhattan</div>
+                <div class="catalog__count">8 товаров</div>
+            </a>
 
-                <a href="/korporativnye-podarki" class="catalog__item" title="Корпоративные подарки">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/6.jpg" alt="Корпоративные подарки" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Корпоративные подарки</div>
-                    <div class="catalog__count">14 товаров</div>
-                </a>
+            <a href="/korporativnye-podarki" class="catalog__item" title="Корпоративные подарки">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/6.jpg" alt="Корпоративные подарки" loading="lazy">
+                </div>
+                <div class="catalog__name">Корпоративные подарки</div>
+                <div class="catalog__count">14 товаров</div>
+            </a>
 
-                <a href="/nastolnye-igry" class="catalog__item" title="Настольные игры">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/7.jpg" alt="Настольные игры" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Настольные игры</div>
-                    <div class="catalog__count">2 товара</div>
-                </a>
+            <a href="/nastolnye-igry" class="catalog__item" title="Настольные игры">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/7.jpg" alt="Настольные игры" loading="lazy">
+                </div>
+                <div class="catalog__name">Настольные игры</div>
+                <div class="catalog__count">2 товара</div>
+            </a>
 
-                <a href="/povsednevnye-aksessuary" class="catalog__item" title="Повседневные аксессуары">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/8.jpg" alt="Повседневные аксессуары" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Повседневные аксессуары</div>
-                    <div class="catalog__count">2 товара</div>
-                </a>
+            <a href="/povsednevnye-aksessuary" class="catalog__item" title="Повседневные аксессуары">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/8.jpg" alt="Повседневные аксессуары" loading="lazy">
+                </div>
+                <div class="catalog__name">Повседневные аксессуары</div>
+                <div class="catalog__count">2 товара</div>
+            </a>
 
-                <a href="/seriya-light" class="catalog__item" title="Серия Light">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/9.jpg" alt="Серия Light" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Серия Light</div>
-                    <div class="catalog__count">20 товаров</div>
-                </a>
+            <a href="/seriya-light" class="catalog__item" title="Серия Light">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/9.jpg" alt="Серия Light" loading="lazy">
+                </div>
+                <div class="catalog__name">Серия Light</div>
+                <div class="catalog__count">20 товаров</div>
+            </a>
 
-                <a href="/seriya-premium" class="catalog__item" title="Серия Premium">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/10.jpg" alt="Серия Premium" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Серия Premium</div>
-                    <div class="catalog__count">49 товаров</div>
-                </a>
+            <a href="/seriya-premium" class="catalog__item" title="Серия Premium">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/10.jpg" alt="Серия Premium" loading="lazy">
+                </div>
+                <div class="catalog__name">Серия Premium</div>
+                <div class="catalog__count">49 товаров</div>
+            </a>
 
-                <a href="/seriya-luks" class="catalog__item" title="Серия люкс">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/11.jpg" alt="Серия люкс" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Серия люкс</div>
-                    <div class="catalog__count">2 товара</div>
-                </a>
+            <a href="/seriya-luks" class="catalog__item" title="Серия люкс">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/11.jpg" alt="Серия люкс" loading="lazy">
+                </div>
+                <div class="catalog__name">Серия люкс</div>
+                <div class="catalog__count">2 товара</div>
+            </a>
 
-                <a href="/dlya-servirovki" class="catalog__item" title="Для сервировки">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/12.jpg" alt="Для сервировки" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Для сервировки</div>
-                    <div class="catalog__count">20 товаров</div>
-                </a>
+            <a href="/dlya-servirovki" class="catalog__item" title="Для сервировки">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/12.jpg" alt="Для сервировки" loading="lazy">
+                </div>
+                <div class="catalog__name">Для сервировки</div>
+                <div class="catalog__count">20 товаров</div>
+            </a>
 
-                <a href="/dlya-rabochego-stola" class="catalog__item" title="Для рабочего стола">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/13.jpg" alt="Для рабочего стола" loading="lazy">
-                    </div>
-                    <div class="catalog__name">Для рабочего стола</div>
-                    <div class="catalog__count">24 товара</div>
-                </a>
+            <a href="/dlya-rabochego-stola" class="catalog__item" title="Для рабочего стола">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/13.jpg" alt="Для рабочего стола" loading="lazy">
+                </div>
+                <div class="catalog__name">Для рабочего стола</div>
+                <div class="catalog__count">24 товара</div>
+            </a>
 
-                <a href="/sale" class="catalog__item" title="SALE">
-                    <div class="catalog__img">
-                        <img src="./img/catalog-img/14.jpg" alt="SALE" loading="lazy">
-                    </div>
-                    <div class="catalog__name">SALE</div>
-                    <div class="catalog__count">9 товаров</div>
-                </a>
-            </div>
-        </section>
+            <a href="/sale" class="catalog__item" title="SALE">
+                <div class="catalog__img">
+                    <img src="./img/catalog-img/14.jpg" alt="SALE" loading="lazy">
+                </div>
+                <div class="catalog__name">SALE</div>
+                <div class="catalog__count">9 товаров</div>
+            </a>
+        </div>
         <section class="product-recommendations">
             <div class="product-recommendations__container">
                 <nav>
@@ -363,33 +364,6 @@
                         <div class="product-card__price"><span>3 525 ₽</span><span>7 050₽</span></div>
                         <a href="#" class="product-card__button">Подробнее</a>
                     </article>
-                </div>
-            </div>
-        </section>
-        <section class="home-about">
-            <div class="home-about__container">
-                <div class="home-about__img-container">
-                    <img src="./img/home-about.jpg" alt="корзина" class="home-about__img">
-                </div>
-
-                <div class="home-about__content">
-                    <h2 class="home-about__title">О компании</h2>
-                    <div class="home-about__text">
-                        <p>
-                            Element - российский бренд, выделяющийся элегантным дизайном, который выражает роскошь в
-                            широкой цветовой палитре из натуральной кожи. Все изделия изготовлены вручную в соответствии
-                            с высочайшими стандартами с использованием как традиционных, так и передовых технологий. Мы
-                            ценим наших клиентов и поддерживаем безупречную репутацию бренда, поэтому разрабатываем свою
-                            продукцию самостоятельно и размещаем заказы, тщательно контролируя все производственные
-                            процессы.
-                        </p>
-                        <p>
-                            Element - это аксессуары для дома, квартиры, дачи, коммерческих помещений, отвечающие вашим
-                            желаниям и вносящие особую эстетику в интерьер.
-                        </p>
-                    </div>
-                    <a href="#" class="home-about__link"><img src="./img/link.svg" alt="стрелочка"
-                            class="home-about__link-img">Подробнее</a>
                 </div>
             </div>
         </section>

@@ -264,6 +264,39 @@
     background: #A7A29B;
 }
 
+.promo-container {
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.promo-wrapper {
+    width: 100%;
+    min-height: 54px;
+    border: 1px solid #D97700;
+    border-radius: 6px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D97700;
+}
+
+.promo-wrapper p {
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+.promo-details {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
 @media (max-width: 930px) {
     .wishlist__wrapper {
         grid-template-columns: repeat(3, minmax(164px, 1fr));
@@ -357,7 +390,7 @@
     .cart__item-price {
         margin-top: 132px;
     }
-    
+
     .wishlist__item {
         font-size: 13px;
     }

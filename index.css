@@ -3,13 +3,20 @@
 @import url(./auth.css);
 @import url(./cart.css);
 
-button, a, input, textarea, [role="button"] {
-  -webkit-tap-highlight-color: transparent;
+button,
+a,
+input,
+textarea,
+[role="button"] {
+    -webkit-tap-highlight-color: transparent;
+}
+
+main {
+    min-height: 50vh;
 }
 
 .hero {
     width: 100%;
-    max-width: 1960px;
     height: 800px;
     margin: 0 auto;
     background-image: url(./img/hero.jpg) !important;
@@ -20,7 +27,7 @@ button, a, input, textarea, [role="button"] {
 
 .wrapper-inner {
     max-width: 1172px;
-    padding: 42px 0 0;
+    padding: 42px 15px 0;
     text-align: center;
     margin: 0 auto;
 }
@@ -65,6 +72,14 @@ button, a, input, textarea, [role="button"] {
 .active {
     border-bottom: 2px solid #6a6a6a;
     cursor: default;
+    pointer-events: none;
+}
+
+.act {
+    cursor: default;
+    pointer-events: none;
+    background-color: #DED9D3;
+    opacity: 0.5;
 }
 
 .active:hover {
@@ -273,6 +288,34 @@ button, a, input, textarea, [role="button"] {
     width: 20px;
 }
 
+.catalog__title {
+    margin: 40px 0;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.nav-intro__item {
+    display: flex;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.nav-intro__item li {
+    cursor: pointer;
+}
+
+.nav-intro__item li:last-child {
+    cursor: default;
+    opacity: 0.5;
+}
+
 @media (hover: none),
 (pointer: coarse) {
     .product-card .product-card__button {
@@ -293,6 +336,11 @@ button, a, input, textarea, [role="button"] {
     .home-about__content {
         width: 90%;
     }
+
+    .catalog__title {
+        font-size: 35px;
+
+    }
 }
 
 @media (max-width: 560px) {
@@ -306,6 +354,15 @@ button, a, input, textarea, [role="button"] {
 
     .home-about__title {
         margin: 0px 0px 20px;
+    }
+
+    .catalog__title {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .nav-intro__item {
+        font-size: 12px;
     }
 }
 
