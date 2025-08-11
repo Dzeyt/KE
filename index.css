@@ -2,6 +2,7 @@
 @import url(./catalog.css);
 @import url(./auth.css);
 @import url(./cart.css);
+@import url(./category.css);
 
 button,
 a,
@@ -167,7 +168,7 @@ main {
     border-radius: 2px;
     text-align: center;
     padding: 9px 13px 8px;
-    color: #F8F7F6;
+    color: #FFF;
     background: #A7A29B;
     border-radius: 2px;
     cursor: pointer;
@@ -313,6 +314,7 @@ main {
 
 .nav-intro__item li:last-child {
     cursor: default;
+    pointer-events: none;
     opacity: 0.5;
 }
 

@@ -19,7 +19,7 @@
     background-color: #A7A29B;
     border-radius: 15px;
     color: #444;
-    border: 5px solid #f8f7f6;
+    border: 5px solid #fff;
     width: 360px;
     transform: opacity 0.5s ease;
 
@@ -36,7 +36,7 @@
 }
 
 .auth-content-container {
-    background-color: #f8f7f6;
+    background-color: #fff;
     border-radius: 67px 0 5px 5px;
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@
     font-weight: 600;
     font-size: 20px;
     margin: 40px auto;
-    color: #f8f7f6;
+    color: #fff;
     transition: opacity 0.3s;
 }
 
@@ -143,7 +143,7 @@
     width: 30px;
     height: 3px;
     border-radius: 5px;
-    background: #f8f7f6;
+    background: #fff;
 }
 
 .close-btn :nth-child(1) {

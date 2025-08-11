@@ -70,6 +70,7 @@
     margin: 0 0 8px;
     font-size: 20px;
     font-weight: 500;
+    width: 70%;
 }
 
 .cart__item-color {
@@ -161,7 +162,7 @@
     padding: 10px 8px 10.5px;
     border-radius: 10px;
     border: none;
-    color: #F8F7F6;
+    color: #FFF;
     background: #A7A29B;
 }
 
@@ -229,6 +230,8 @@
     margin: 0 0 8px;
     font-size: 20px;
     font-weight: 500;
+    text-align: center;
+    height: 60px;
 }
 
 .wishlist__item-price {
@@ -260,7 +263,7 @@
     padding: 7px 8px 6.5px;
     border-radius: 6px;
     border: none;
-    color: #F8F7F6;
+    color: #FFF;
     background: #A7A29B;
 }
 
