@@ -3,6 +3,7 @@
 @import url(./auth.css);
 @import url(./cart.css);
 @import url(./category.css);
+@import url(./card.css);
 
 button,
 a,
@@ -300,12 +301,13 @@ main {
 .nav-intro__item {
     display: flex;
     gap: 6px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 13px;
     letter-spacing: 0.26px;
     text-transform: uppercase;
     color: #666;
+    flex-wrap: wrap;
 }
 
 .nav-intro__item li {
@@ -345,6 +347,16 @@ main {
     }
 }
 
+@media (max-width: 620px) {
+    .wrapper-inner {
+        padding: 30px 15px 0;
+    }
+
+    .nav-intro__item {
+        font-size: 11px;
+    }
+}
+
 @media (max-width: 560px) {
     .home-catalog__title {
         font-size: 34px;
@@ -361,10 +373,6 @@ main {
     .catalog__title {
         margin-bottom: 30px;
         font-size: 30px;
-    }
-
-    .nav-intro__item {
-        font-size: 12px;
     }
 }
 
@@ -387,6 +395,10 @@ main {
 
     .footer__copyright {
         margin: 15px 0 20px;
+    }
+
+    .nav-intro__item {
+        font-size: 10px;
     }
 
 }

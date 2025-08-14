@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Органайзер LET long</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header__logo">
+                <a href="./index.html"><img class="logo-img" src="./img/logo.png" alt="логотип"></a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav-menu">
+                    <li><a href="./catalog.html" class="menu-item" aria-label="Каталог">КАТАЛОГ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="./promo.html" class="menu-item" aria-label="Акции">АКЦИИ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="./about.html" class="menu-item" aria-label="О компании">О КОМПАНИИ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="./contacts.html" class="menu-item" aria-label="Контакты">КОНТАКТЫ</a></li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="./support.html" class="menu-item" aria-label="Поддержка">ПОДДЕРЖКА</a></li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input">
+                <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
+            </div>
+            <div class="user-actions">
+                <button class="action-btn" aria-label="Вход/Регистрация">
+                    <img src="./img/user-icon.svg" alt="Вход/Регистрация">
+                </button>
+            </div>
+            <div class="header__tools">
+                <div class="header__tools-container header-cart">
+                    <a href="./cart.html" class="header-tools__links header-cart__link">
+                        <div class="header-tools__count">
+                            <span>
+                                <div class="items">
+                                    <div>2</div>
+                                </div>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__tools-container header-wishlist">
+                    <a href="./wishlist.html" class="header-tools__links header-wishlist__link">
+                        <div class="header-tools__count">
+                            <span>
+                                <div class="items">
+                                    <div>2</div>
+                                </div>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <button class="mobile-menu__trigger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                <div class="mobile-menu__search">
+                    <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту" class="search-input">
+                    <input name="s" type="submit" value="Поиск" aria-label="Поиск по сайту" class="search-icon">
+                </div>
+                <div class="mobile-menu-overlay"></div>
+                <nav role="navigation" class="mobile-menu__nav">
+                    <a href="./catalog.html" aria-label="Каталог">КАТАЛОГ</a>
+                    <a href="./promo.html" aria-label="Акции">АКЦИИ</a>
+                    <a href="./about.html" aria-label="О компании">О КОМПАНИИ</a>
+                    <a href="./contacts.html" aria-label="Контакты">КОНТАКТЫ</a>
+                    <a href="./support.html" aria-label="Поддержка">ПОДДЕРЖКА</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper-inner">
+            <div class="nav-intro">
+                <ul class="nav-intro__item">
+                    <li><a href="./index.html">Главная</a></li>
+                    <span>/</span>
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <span>/</span>
+                    <li><a href="./nastolnye-korziny.html">Настольные корзины</a></li>
+                    <span>/</span>
+                    <li><a href="#">Органайзер LET long</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card__container">
+            <div class="card__content">
+                <div class="product-gallery">
+                    <div class="product-gallery__main-container">
+                        <img src="./img/product-category/7.jpg" alt="Изображение товара 1"
+                            class="product-gallery__main-img">
+
+                        <!-- Кнопки навигации -->
+                        <button class="product-gallery__nav-btn product-gallery__nav-btn--prev"
+                            aria-label="Предыдущее изображение">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24" color="black" data-path="solids/expander/Right">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="m8.818 16.382 4.773-4.773-4.773-4.773a.75.75 0 0 1 1.06-1.06l5.304 5.303a.75.75 0 0 1 0 1.06L9.88 17.444a.75.75 0 1 1-1.06-1.06"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <button class="product-gallery__nav-btn product-gallery__nav-btn--next"
+                            aria-label="Следующее изображение">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24" color="black" data-path="solids/expander/Right">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="m8.818 16.382 4.773-4.773-4.773-4.773a.75.75 0 0 1 1.06-1.06l5.304 5.303a.75.75 0 0 1 0 1.06L9.88 17.444a.75.75 0 1 1-1.06-1.06"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <!-- Индикаторы (точки) -->
+                        <div class="product-gallery__indicators">
+                            <button class="product-gallery__indicator product-gallery__indicator--active"
+                                aria-label="Показать изображение 1"></button>
+                            <button class="product-gallery__indicator" aria-label="Показать изображение 2"></button>
+                            <button class="product-gallery__indicator" aria-label="Показать изображение 3"></button>
+                        </div>
+                    </div>
+
+                    <div class="product-gallery__thumbnails">
+                        <img src="./img/product-category/7.jpg" alt="Миниатюра 1"
+                            class="product-gallery__thumbnail product-gallery__thumbnail--active" data-index="0">
+                        <img src="./img/6jeezxv532o4fjsuw0ks884hrk7piltg.jpg" alt="Миниатюра 2"
+                            class="product-gallery__thumbnail" data-index="1">
+                        <img src="./img/txv0jc6ekk4knqlaelhqkmsah66bazzp.jpg" alt="Миниатюра 3"
+                            class="product-gallery__thumbnail" data-index="2">
+                    </div>
+                </div>
+                <div class="card__discription">
+                    <h3 class="card__name">Органайзер LET long</h3>
+                    <div class="card__price">10 700 ₽</div>
+                    <div class="card__color">
+                        <h3 class="card__color-name">Цвет</h3>
+                        <div class="card__color-items">
+                            <div class="card__color-item card__color-item-act">
+                                <img src="./img/product-category/7.jpg" alt="">
+                                <p>Капучино</p>
+                            </div>
+                            <div class="card__color-item">
+                                <img src="./img/z29akb5bd4qhp3rwo81idaxropbaxd3f (1) (1).jpg" alt="">
+                                <p>Функция</p>
+                            </div>
+                            <div class="card__color-item">
+                                <img src="./img/khvoya.jpg" alt="">
+                                <p>Хвоя</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__btn-container">
+                        <button class="card__btn">Быстрая покупка</button>
+                        <button class="card__btn card__btn-cart">В корзину</button>
+                    </div>
+                    <button class="wishlist__item-btn">
+                        <img src="./img/wishlist-icon.svg" alt="">
+                    </button>
+                    <button class="wishlist__item-btn link-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="m18.156 4.967.032.013.007.003.058.02.061.03-.102-.042-.017-.008-.004-.001.02.009.116.048q.167.075.328.162c.747.4 1.333.985 1.733 1.732l.104.205c.299.619.471 1.313.503 2.8l.005.526v5.666l-.005.526c-.03 1.404-.185 2.101-.454 2.696l-.1.206-.053.102a4.16 4.16 0 0 1-1.733 1.733l-.204.104c-.62.3-1.314.471-2.8.503l-.527.005H8.88L8.353 22c-1.404-.03-2.101-.185-2.696-.454l-.207-.1-.102-.053a4.16 4.16 0 0 1-1.732-1.733l-.104-.204c-.3-.62-.472-1.314-.503-2.8l-.005-.526v-5.666c0-1.764.158-2.558.459-3.222l.1-.207.053-.102c.37-.692.9-1.246 1.57-1.642l.006.013a.688.688 0 1 1 .55 1.26l.057-.042a2.9 2.9 0 0 0-.992 1.083l-.093.186c-.16.346-.266.735-.31 1.415l-.02.402-.004.225-.001 6.684q0 .252.006.469l.018.401c.045.681.15 1.07.31 1.416l.094.186c.28.523.69.933 1.213 1.213l.186.093c.346.16.735.266 1.415.31l.402.02.225.004.244.001h7.02q.252 0 .468-.006l.402-.018c.68-.045 1.07-.15 1.416-.311l.186-.093c.522-.28.933-.69 1.212-1.213l.094-.186c.16-.346.266-.735.31-1.416l.019-.401.005-.226.001-.243v-6.44q0-.253-.006-.469l-.018-.402c-.045-.68-.15-1.07-.311-1.415l-.093-.186a2.9 2.9 0 0 0-1.213-1.213l-.168-.085a.695.695 0 0 1-.513-.668.688.688 0 0 1 .853-.668l.029.008zM12 2.004l.046.002c.155.003.309.06.431.165l.08.08 3.829 4.564a.687.687 0 0 1-.975.964l-.078-.08-2.646-3.153v8.687a.687.687 0 1 1-1.374 0l-.001-8.631-2.62 3.123a.687.687 0 1 1-1.053-.884L11.4 2.354a.69.69 0 0 1 .599-.35"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card__info">
+                <div class="properties__container">
+                    <table class="properties__table">
+                        <tr class="properties__row">
+                            <td class="properties__cell">
+                                <b class="properties__title">Тип</b>
+                                <div class="properties__text">Настольная корзина</div>
+                            </td>
+                        </tr>
+                        <tr class="properties__row">
+                            <td class="properties__cell">
+                                <b class="properties__title">Цвет</b>
+                                <div class="properties__text">Капучино</div>
+                            </td>
+                        </tr>
+                        <tr class="properties__row">
+                            <td class="properties__cell"><b class="properties__title">Материал</b>
+                                <div class="properties__text">Натуральная кожа</div>
+                            </td>
+                        </tr>
+                        <tr class="properties__row">
+                            <td class="properties__cell"><b class="properties__title">Размер</b>
+                                <div class="properties__text">27*19*10см</div>
+                            </td>
+                        </tr>
+                        <tr class="properties__row">
+                            <td class="properties__cell"><b class="properties__title">Артикул</b>
+                                <div class="properties__text">
+                                    <div class="properties__article"><span>7059114</span>
+                                        <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24"
+                                                fill="none" viewBox="0 0 25 24" color="#1b1b1b">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M9.898 6.5c0-2.121 0-3.182.659-3.841S12.277 2 14.398 2h4c2.121 0 3.182 0 3.841.659s.659 1.72.659 3.841v4c0 2.121 0 3.182-.659 3.841s-1.72.659-3.841.659h-4c-2.121 0-3.182 0-3.841-.659s-.659-1.72-.659-3.841zm1.5-.5c0-1.179 0-1.768.366-2.134s.956-.366 2.134-.366h5c1.178 0 1.768 0 2.134.366s.366.955.366 2.134v5c0 1.178 0 1.768-.366 2.134s-.956.366-2.134.366h-5c-1.178 0-1.768 0-2.134-.366s-.366-.956-.366-2.134z"
+                                                    clip-rule="evenodd"></path>
+                                                <path fill="currentColor"
+                                                    d="M7.398 9h.25a.75.75 0 0 1 0 1.5h-.75c-1.178 0-1.768 0-2.134.366s-.366.956-.366 2.134v5c0 1.178 0 1.768.366 2.134s.955.366 2.134.366h5c1.178 0 1.768 0 2.134-.366s.366-.956.366-2.134v-.75a.75.75 0 0 1 1.5 0v.25c0 2.121 0 3.182-.659 3.841s-1.72.659-3.841.659h-4c-2.121 0-3.182 0-3.841-.659s-.659-1.72-.659-3.841v-4c0-2.121 0-3.182.659-3.841S5.277 9 7.398 9">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="card__about">
+                    <div class="card__about-wrapper">
+                        <h3>Описание</h3>
+                        <p>Один из интересных элементов интерьера из натуральной кожи, это органайзер для хранения.
+                            Такой органайзер стильно впишется в любой интерьер и может использоваться для разных вещей.
+                            Например, можно использовать его для хранения ключей, мелочей, украшений, кремов или даже в
+                            качестве декоративного элемента, чтобы добавить шарма в вашу комнату. Кожаный органайзер
+                            также может быть использован на рабочем столе для хранения небольших канцелярских
+                            принадлежностей. Органайзер LET long сочетает в себе функциональность и эстетику, и будет
+                            отлично дополнять ваш интерьер, независимо от его стиля.</p>
+                    </div>
+                    <div class="card__about-wrapper">
+                        <h3>Доставка</h3>Бесплатная доставка по России при покупке от&nbsp;30&nbsp;000&nbsp;₽. <a
+                            href="#" class="card__about-link">Условия доставки</a>
+                    </div>
+                    <div class="card__about-wrapper">
+                        <h3>Возврат</h3>Вы можете вернуть неподошедший товар в течение 14 дней
+                        с даты получения. <a href="#" class="card__about-link">Условия возврата</a>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <section class="product-recommendations">
+            <div class="product-recommendations__container">
+                <nav>
+                    <ul class="product-recommendations-nav">
+                        <li class="product-recommendations__item active" data-category="hit">Хит</li>
+                        <li class="product-recommendations__item" data-category="recommended">Советуем</li>
+                        <li class="product-recommendations__item" data-category="new">Новинки</li>
+                        <li class="product-recommendations__item" data-category="sale">Акция</li>
+                    </ul>
+                </nav>
+                <div class="product-recommendations__grid" id="hit">
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit1.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Органайзер LET</a></h3>
+                        <div class="product-card__price">
+                            <span>6 700 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit2.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Поднос GET</a></h3>
+                        <div class="product-card__price">
+                            <span>16 050 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit3.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Поднос с ручками FABA</a>
+                        </h3>
+                        <div class="product-card__price">
+                            <span>15 800 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit4.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Корзина BUBBLES XL
+                                low</a></h3>
+                        <div class="product-card__price">
+                            <span>37 000 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-hit">
+                        <img src="./img/product-card/product-card-hit5.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Корзина LILY</a></h3>
+                        <div class="product-card__price">
+                            <span>7 050 ₽</span>
+                        </div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                </div>
+                <div class="product-recommendations__grid hidden" id="recommended">
+                    <article class="product-card product-card-recommended">
+                        <img src="./img/product-card/product-card-rec1.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Органайзер для мелочей
+                                LONG
+                                XL</a></h3>
+                        <div class="product-card__price"><span>5 000 ₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-recommended">
+                        <img src="./img/product-card/product-card-rec2.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Органайзер для мелочей
+                                LONG
+                                mini</a></h3>
+                        <div class="product-card__price"><span>3 750 ₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+
+                </div>
+                <div class="product-recommendations__grid hidden" id="new">
+                    <article class="product-card product-card-new">
+                        <img src="./img/product-card/product-card-new1.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Органайзер Unit</a></h3>
+                        <div class="product-card__price"><span>7 500 ₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-new">
+                        <img src="./img/product-card/product-card-new2.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Органайзер для мелочей
+                                Fancy</a></h3>
+                        <div class="product-card__price"><span>7 600 ₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-new">
+                        <img src="./img/product-card/product-card-new3.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Плейсмат круглый
+                                двухсторонний</a></h3>
+                        <div class="product-card__price"><span>5 700 ₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-new">
+                        <img src="./img/product-card/product-card-new4.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Шкатулка- органайзер
+                                Symphony</a></h3>
+                        <div class="product-card__price"><span>19 500 ₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-new">
+                        <img src="./img/product-card/product-card-new5.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Нарды 30*50</a></h3>
+                        <div class="product-card__price"><span>165 000 ₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-new">
+                        <img src="./img/product-card/product-card-new6.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Газетница</a></h3>
+                        <div class="product-card__price"><span>20 450 ₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-new">
+                        <img src="./img/product-card/product-card-new7.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Поднос SKY M</a></h3>
+                        <div class="product-card__price"><span>25 850 ₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                </div>
+                <div class="product-recommendations__grid hidden" id="sale">
+                    <article class="product-card product-card-sale">
+                        <div class="sale">
+                            <p>-20%</p>
+                        </div>
+                        <img src="./img/product-card/product-card-sale1.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Корзина BUBBLES mini
+                                Sale</a>
+                        </h3>
+                        <div class="product-card__price"><span>22 760 ₽</span><span>28 450₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-sale">
+                        <div class="sale">
+                            <p>-50%</p>
+                        </div>
+                        <img src="./img/product-card/product-card-sale2.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Корзина QUADRO Sale</a>
+                        </h3>
+                        <div class="product-card__price"><span>2 850 ₽</span><span>5 700₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card-sale">
+                        <div class="sale">
+                            <p>-50%</p>
+                        </div>
+                        <img src="./img/product-card/product-card-sale3.jpg" alt="" class="product-cart__img">
+                        <h3 class="product-card__title"><a href="#" class="product-card__link">Корзина Lily SALE</a>
+                        </h3>
+                        <div class="product-card__price"><span>3 525 ₽</span><span>7 050₽</span></div>
+                        <a href="#" class="product-card__button">Подробнее</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                <time datetime="2025" class="footer__year">© 2025 Karina El</time>
+            </div>
+            <div class="footer__contacts">
+                <a href="tel:+79995552266" class="footer__phone">
+                    <img src="./img/phone-icon.svg" alt="phone" class="footer__phone-icon">
+                    +7 999 555-22-66
+                </a>
+                <div class="footer__social">
+                    <a href="https://wa.me/79995552266" target="_blank" rel="noopener">
+                        <img src="./img/whatsapp-icon.svg" alt="whatsapp" class="footer__social-icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener">
+                        <img src="./img/instagram.svg" alt="Instagram" class="footer__social-icon">
+                    </a>
+                    <a href="https://telegram.com" target="_blank" rel="noopener">
+                        <img src="./img/tg-icon.svg" alt="Telegram" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="gallery-popup">
+        <div class="gallery-popup__content">
+            <button class="gallery-popup__close-btn" aria-label="Закрыть">
+                <span></span>
+                <span></span>
+            </button>
+            <img src="" alt="" class="gallery-popup__img">
+            <button class="gallery-popup__nav-btn gallery-popup__nav-btn--prev" aria-label="Предыдущее изображение">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+                    color="black" data-path="solids/expander/Right">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="m8.818 16.382 4.773-4.773-4.773-4.773a.75.75 0 0 1 1.06-1.06l5.304 5.303a.75.75 0 0 1 0 1.06L9.88 17.444a.75.75 0 1 1-1.06-1.06"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <button class="gallery-popup__nav-btn gallery-popup__nav-btn--next" aria-label="Следующее изображение">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+                    color="black" data-path="solids/expander/Right">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="m8.818 16.382 4.773-4.773-4.773-4.773a.75.75 0 0 1 1.06-1.06l5.304 5.303a.75.75 0 0 1 0 1.06L9.88 17.444a.75.75 0 1 1-1.06-1.06"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="auth-overlay" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+        <div class="auth-modal">
+            <button class="close-btn">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="auth-icon-container">
+                <img src="./img/auth-icon.svg" alt="иконка">
+            </div>
+
+            <div class="auth-content-container">
+                <h2 id="auth-modal-title" class="auth-title">Вход</h2>
+
+                <form class="auth-form" method="POST" action="/login">
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-input" required autocomplete="email"
+                            placeholder="your@email.com" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Пароль</label>
+                        <input type="password" id="password" name="password" class="form-input" required
+                            autocomplete="current-password" placeholder="**********" aria-required="true">
+                        <div class="forgot-password">
+                            <a href="/forgot-password" class="forgot-password-link">Забыли Пароль?</a>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-button">Войти</button>
+                </form>
+
+                <div class="auth-register-prompt">
+                    <span>Нет аккаунта?</span>
+                    <a href="/register" class="auth-register-link">Зарегистрироваться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.querySelector('.mobile-menu__trigger').addEventListener('click', function () {
+        const menuElement = document.querySelector('.mobile-menu');
+        const overlay = document.querySelector('.mobile-menu-overlay');
+        const body = document.body;
+        let scrollPosition;
+
+        if (menuElement.classList.contains('open')) {
+            // Закрываем меню и разблокируем скролл
+            menuElement.classList.remove('open');
+            overlay.classList.remove('active');
+
+            // Восстанавливаем скролл
+            body.style.position = '';
+            body.style.top = '';
+            body.style.width = '';
+            body.style.overflow = '';
+            window.scrollTo(0, parseInt(body.dataset.scrollPosition || '0'));
+
+            // Для iOS
+            document.removeEventListener('touchmove', preventTouch);
+        } else {
+            // Открываем меню и блокируем скролл
+            menuElement.classList.add('open');
+            overlay.classList.add('active');
+
+            // Сохраняем и фиксируем позицию скролла
+            scrollPosition = window.scrollY;
+            body.style.position = 'fixed';
+            body.style.top = `-${scrollPosition}px`;
+            body.style.width = '100%';
+            body.style.overflow = 'hidden';
+            body.dataset.scrollPosition = scrollPosition; // Сохраняем позицию в data-атрибут
+
+            // Для iOS
+            document.addEventListener('touchmove', preventTouch, { passive: false });
+        }
+    });
+
+    // Функция для блокировки скролла на iOS
+    function preventTouch(e) {
+        e.preventDefault();
+    }
+
+    // Закрытие меню при клике на оверлей
+    document.querySelector('.mobile-menu-overlay').addEventListener('click', function () {
+        const menuElement = document.querySelector('.mobile-menu');
+        const body = document.body;
+
+        menuElement.classList.remove('open');
+        this.classList.remove('active');
+
+        // Полное восстановление скролла
+        body.style.position = '';
+        body.style.top = '';
+        body.style.width = '';
+        body.style.overflow = '';
+        window.scrollTo(0, parseInt(body.dataset.scrollPosition || '0'));
+
+        document.removeEventListener('touchmove', preventTouch);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const categoryItems = document.querySelectorAll('.product-recommendations__item');
+
+        categoryItems.forEach(item => {
+            item.addEventListener('click', function () {
+                // Удаляем активный класс у всех элементов
+                categoryItems.forEach(i => i.classList.remove('active'));
+
+                // Добавляем активный класс текущему элементу
+                this.classList.add('active');
+
+                // Скрываем все категории
+                document.querySelectorAll('.product-recommendations__grid').forEach(grid => {
+                    grid.classList.add('hidden');
+                });
+
+                // Показываем выбранную категорию
+                const category = this.getAttribute('data-category');
+                const selectedCategory = document.getElementById(category);
+
+                if (selectedCategory) {
+                    selectedCategory.classList.remove('hidden');
+                } else {
+                    console.error('Элемент с ID "${category}" не найден');
+                }
+            });
+        });
+    });
+
+    document.querySelector('.action-btn').addEventListener('click', function () {
+        const overlay = document.querySelector('.auth-overlay');
+
+        overlay.classList.add('opened');
+
+        document.body.style.overflow = 'hidden';
+    })
+
+    document.querySelector('.close-btn').addEventListener('click', closeAuthForm);
+
+    document.querySelector('.auth-overlay').addEventListener('click', function (e) {
+        if (e.target === this) {
+            closeAuthForm();
+        }
+    });
+
+    function closeAuthForm() {
+        const overlay = document.querySelector('.auth-overlay');
+
+        overlay.classList.remove('opened')
+
+        document.body.style.overflow = '';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const gallery = document.querySelector('.product-gallery');
+        const mainImg = gallery.querySelector('.product-gallery__main-img');
+        const thumbnails = gallery.querySelectorAll('.product-gallery__thumbnail');
+        const prevBtn = gallery.querySelector('.product-gallery__nav-btn--prev');
+        const nextBtn = gallery.querySelector('.product-gallery__nav-btn--next');
+        const indicators = gallery.querySelectorAll('.product-gallery__indicator');
+
+        // Элементы попапа
+        const popup = document.querySelector('.gallery-popup');
+        const popupImg = document.querySelector('.gallery-popup__img');
+        const popupClose = document.querySelector('.gallery-popup__close-btn');
+        const popupPrev = document.querySelector('.gallery-popup__nav-btn--prev');
+        const popupNext = document.querySelector('.gallery-popup__nav-btn--next');
+
+        const images = [
+            './img/product-category/7.jpg',
+            './img/6jeezxv532o4fjsuw0ks884hrk7piltg.jpg',
+            './img/txv0jc6ekk4knqlaelhqkmsah66bazzp.jpg'
+        ];
+
+        let currentIndex = 0;
+        let startX = 0;
+        let endX = 0;
+
+        // Обновление галереи
+        function updateGallery(index) {
+            currentIndex = index;
+
+            // Обновляем главное изображение
+            mainImg.src = images[index];
+            mainImg.alt = `Изображение товара ${index + 1}`;
+
+            // Обновляем попап изображение (если открыт)
+            if (popup.classList.contains('gallery-popup--active')) {
+                popupImg.src = images[index];
+                popupImg.alt = `Изображение товара ${index + 1}`;
+            }
+
+            // Обновляем активную миниатюру
+            thumbnails.forEach((thumb, i) => {
+                thumb.classList.toggle('product-gallery__thumbnail--active', i === index);
+            });
+
+            // Обновляем индикаторы
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('product-gallery__indicator--active', i === index);
+                indicator.setAttribute('aria-label', `Показать изображение ${i + 1}`);
+            });
+        }
+
+        // Обработчики свайпа для основной галереи
+        mainImg.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        }, { passive: true });
+
+        mainImg.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        }, { passive: true });
+
+        // Обработчики свайпа для попапа
+        popupImg.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        }, { passive: true });
+
+        popupImg.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        }, { passive: true });
+
+        // Определение направления свайпа
+        function handleSwipe() {
+            const threshold = 50; // Минимальное расстояние свайпа
+            const diffX = startX - endX;
+
+            if (diffX > threshold) {
+                // Свайп влево - следующее изображение
+                nextImage();
+            } else if (diffX < -threshold) {
+                // Свайп вправо - предыдущее изображение
+                prevImage();
+            }
+        }
+
+        // Открытие попапа
+        function openPopup() {
+            popupImg.src = images[currentIndex];
+            popupImg.alt = `Изображение товара ${currentIndex + 1}`;
+            popup.classList.add('gallery-popup--active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Закрытие попапа
+        function closePopup() {
+            popup.classList.remove('gallery-popup--active');
+            document.body.style.overflow = '';
+        }
+
+        // Переход к следующему изображению
+        function nextImage() {
+            const newIndex = (currentIndex + 1) % images.length;
+            updateGallery(newIndex);
+        }
+
+        // Переход к предыдущему изображению
+        function prevImage() {
+            const newIndex = (currentIndex - 1 + images.length) % images.length;
+            updateGallery(newIndex);
+        }
+
+        // Остальные обработчики событий (как в вашем исходном коде)
+        nextBtn.addEventListener('click', nextImage);
+        prevBtn.addEventListener('click', prevImage);
+        mainImg.addEventListener('click', openPopup);
+
+        popupNext.addEventListener('click', nextImage);
+        popupPrev.addEventListener('click', prevImage);
+        popupClose.addEventListener('click', closePopup);
+
+        popup.addEventListener('click', function (e) {
+            if (e.target === popup) {
+                closePopup();
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && popup.classList.contains('gallery-popup--active')) {
+                closePopup();
+            }
+        });
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function () {
+                const index = parseInt(this.dataset.index);
+                updateGallery(index);
+            });
+        });
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', function () {
+                updateGallery(index);
+            });
+        });
+
+        // Инициализация
+        updateGallery(0);
+    });
+</script>
+
+</html>
