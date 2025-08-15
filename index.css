@@ -58,7 +58,7 @@ main {
 .product-recommendations-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 32px;
 }
 
 .product-recommendations__item {
@@ -382,11 +382,11 @@ main {
 
 @media (max-width: 370px) {
     .product-recommendations__item {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .product-recommendations-nav {
-        gap: 25px;
+        gap: 20px;
     }
 
     .footer__container {
