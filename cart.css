@@ -150,7 +150,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
-    color: #D97700;
+    color: #C99A60;
 }
 
 .checkout-button {
@@ -276,7 +276,7 @@
 .promo-wrapper {
     width: 100%;
     min-height: 54px;
-    border: 1px solid #D97700;
+    border: 1px solid #C99A60;
     border-radius: 6px;
     background-color: transparent;
     font-weight: 400;
@@ -285,7 +285,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #D97700;
+    color: #C99A60;
 }
 
 .promo-wrapper p {

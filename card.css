@@ -157,6 +157,7 @@
 .properties__table {
     width: 100%;
     box-sizing: border-box;
+    margin-top: 32px;
 }
 
 .properties__row {
@@ -334,7 +335,7 @@
 
 .card__about-link {
     text-decoration: underline;
-    color: #D97700;
+    color: #C99A60;
 }
 
 .product-gallery__main-img {
